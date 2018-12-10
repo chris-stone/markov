@@ -11,6 +11,7 @@ namespace Markov
     /// Represents a state in a Markov chain.
     /// </summary>
     /// <typeparam name="T">The type of the constituent parts of each state in the Markov chain.</typeparam>
+    [Serializable]
     public class ChainState<T> : IEquatable<ChainState<T>>, IList<T>
     {
         private readonly T[] items;
